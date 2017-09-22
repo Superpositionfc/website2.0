@@ -57,3 +57,18 @@ canvas.height = $(window).innerHeight();
 $(window).resize();
 
 });
+
+
+
+$("#team img").each(function(){
+
+  $(this).hover(
+    function() {
+      $(this).text("worked");
+    },
+    function() {
+      $(this).text("");
+    }
+
+ );
+});
