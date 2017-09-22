@@ -358,6 +358,9 @@ figure {
   box-sizing:content-box;
   color:black;
 }
+.img-circle {
+    border-radius: 50%;
+}
 figure img {
   -webkit-border-radius:50%;
   -moz-border-radius:50%;  
