@@ -398,14 +398,6 @@ figcaption {
 #team > figure:hover > .hoverable {
   visibility:visible;
 
-#team .hoverable {
-  visibility:hidden;
-  text-align:center;
-  margin-top:-130px;
-  
-
-
-}
 
 #team > figure:hover > .hoverable {
   visibility:visible;
@@ -415,7 +407,7 @@ figcaption {
   
 
 }
-.rotate90 {
+#team .rotate90 {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
