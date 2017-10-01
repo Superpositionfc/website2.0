@@ -390,7 +390,7 @@ figcaption {
   visibility:hidden;
   text-align:center;
   margin-top:-130px;
-  z-index: 3;
+  z-index: 1;
 
 
 }
