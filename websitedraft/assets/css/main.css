@@ -375,13 +375,13 @@ figure img {
  
    
 }
-#team:hover img, #team:active img {
+/*#team:hover img, #team:active img {
   opacity:1;
 }
 #team:hover img:hover, #team:active img:active   {
   opacity:0.3;
  
-}
+}*/
 figcaption {
   font-size:1.5rem;
   text-align:center;
@@ -390,7 +390,7 @@ figcaption {
   visibility:hidden;
   text-align:center;
   margin-top:-130px;
-  z-index: 1;
+  /*z-index: 1;*/
 
 
 }
@@ -407,7 +407,7 @@ figcaption {
   
 
 }
-#team .rotate90 {
+rotate90 {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
