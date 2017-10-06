@@ -366,7 +366,7 @@ figure img {
   -moz-border-radius:50%;  
   border-radius:50%; 
 }
-#team figure img {
+/*#team figure img {
   -webkit-transition:opacity 0.26s ease-out;   
   -moz-transition:opacity 0.26s ease-out;   
   -ms-transition:opacity 0.26s ease-out;   
@@ -375,7 +375,7 @@ figure img {
  
    
 }
-/*#team:hover img, #team:active img {
+#team:hover img, #team:active img {
   opacity:1;
 }
 #team:hover img:hover, #team:active img:active   {
@@ -407,7 +407,7 @@ figcaption {
   
 
 }
-rotate90 {
+.rotate90 {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
