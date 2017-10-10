@@ -23,13 +23,17 @@ body {
   }
 }
 
+#myTopnav {
+  z-index: 100;
+}
+
 #header {
   display: flex;
-  width: 70%;
   height: 100vh;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  position: relative;
   .logo {
     flex: 40%;
     width: 40%;
@@ -53,6 +57,66 @@ body {
       text-align: center;
     }
   }
+  .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #D194D2;
+    path {
+      fill: #F4F4F4;
+    }
+  }
+}
+
+#info {
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  position: relative;
+  margin-bottom: 10vh;
+  background-color: #D194D2;
+  .content {
+    display: flex;
+    .quote {
+      width: 50%;
+      flex: 50%;
+      font-size: 1.4em;
+      display: inline-block;
+      .author {
+        color: #008BEE;
+        font-size: 0.95em;
+      }
+    }
+    .stats {
+      width: 50%;
+      flex: 50%;
+      .stat {
+        .value {
+          color: #4C2887;
+          font-size: 3em;
+          padding-right: 10px;
+        }
+        .text {
+          vertical-align: super;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+  .arrow {
+    position: absolute;
+    bottom: -10vh;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #F4F4F4;
+    path {
+      fill: #D194D2;
+    }
+  }
 }
 
 #mission {
@@ -73,40 +137,6 @@ body {
     }
   }
 }
-
-#info {
-  padding: 30px;
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  .quote {
-    width: 50%;
-    flex: 50%;
-    font-size: 1.4em;
-    display: inline-block;
-    .author {
-      color: #008BEE;
-      font-size: 0.95em;
-    }
-  }
-  .stats {
-    width: 50%;
-    flex: 50%;
-    .stat {
-      .value {
-        color: #D0709E;
-        font-size: 3em;
-        padding-right: 10px;
-      }
-      .text {
-        vertical-align: super;
-        font-size: 1.5em;
-      }
-    }
-  }
-}
-
 
 #faq {
   background-color: #C69DD2;

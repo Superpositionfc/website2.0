@@ -18,13 +18,16 @@ body {
       color: inherit;
       text-decoration: none; }
 
+#myTopnav {
+  z-index: 100; }
+
 #header {
   display: flex;
-  width: 70%;
   height: 100vh;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
   #header .logo {
     flex: 40%;
     width: 40%;
@@ -41,6 +44,53 @@ body {
       box-shadow: 0px 0px 20px grey; }
     #header .content .more {
       text-align: center; }
+  #header .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #D194D2; }
+    #header .arrow path {
+      fill: #F4F4F4; }
+
+#info {
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  position: relative;
+  margin-bottom: 10vh;
+  background-color: #D194D2; }
+  #info .content {
+    display: flex; }
+    #info .content .quote {
+      width: 50%;
+      flex: 50%;
+      font-size: 1.4em;
+      display: inline-block; }
+      #info .content .quote .author {
+        color: #008BEE;
+        font-size: 0.95em; }
+    #info .content .stats {
+      width: 50%;
+      flex: 50%; }
+      #info .content .stats .stat .value {
+        color: #4C2887;
+        font-size: 3em;
+        padding-right: 10px; }
+      #info .content .stats .stat .text {
+        vertical-align: super;
+        font-size: 1.5em; }
+  #info .arrow {
+    position: absolute;
+    bottom: -10vh;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #F4F4F4; }
+    #info .arrow path {
+      fill: #D194D2; }
 
 #mission {
   overflow: hidden; }
@@ -56,31 +106,6 @@ body {
       display: block;
       width: 25%;
       height: auto; }
-
-#info {
-  padding: 30px;
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-  display: flex; }
-  #info .quote {
-    width: 50%;
-    flex: 50%;
-    font-size: 1.4em;
-    display: inline-block; }
-    #info .quote .author {
-      color: #008BEE;
-      font-size: 0.95em; }
-  #info .stats {
-    width: 50%;
-    flex: 50%; }
-    #info .stats .stat .value {
-      color: #D0709E;
-      font-size: 3em;
-      padding-right: 10px; }
-    #info .stats .stat .text {
-      vertical-align: super;
-      font-size: 1.5em; }
 
 #faq {
   background-color: #C69DD2;
