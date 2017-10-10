@@ -1,74 +1,11 @@
-jQuery(document).ready(function($){
-
-var windowXArray = [],
-    windowYArray = [];
-
-for (var i = 0; i < $(window).innerWidth(); i++) {
-    windowXArray.push(i);
-}
-    
-for (var i = 0; i < $(window).innerHeight(); i++) {
-    windowYArray.push(i);
-}
-
-function randomPlacement(array) {
-    var placement = array[Math.floor(Math.random()*array.length)];
-    return placement;
-}
-    
-
-var canvas = oCanvas.create({
-   canvas: '#canvas',
-   background: '#2c3e50',
-   fps: 60
-});
-
-setInterval(function(){
-
-var rectangle = canvas.display.ellipse({
-   x: randomPlacement(windowXArray),
-   y: randomPlacement(windowYArray),
-   origin: { x: 'center', y: 'center' },
-   radius: 0,
-   fill: '#27ae60',
-   opacity: 1
-});
-
-canvas.addChild(rectangle);
-
-rectangle.animate({
-  radius: 10,
-  opacity: 0
-}, {
-  duration: '1000',
-  easing: 'linear',
-  callback: function () {
-			this.remove();
-		}
-});
-
-}, 100);
-
-$(window).resize(function(){
-canvas.width = $(window).innerWidth();
-canvas.height = $(window).innerHeight();
-});
-
-$(window).resize();
-
-});
-
-
-
-$("#team img").each(function(){
-
-  $(this).hover(
-    function() {
-      $(this).text("worked");
-    },
-    function() {
-      $(this).text("");
-    }
-
- );
+$('form').submit(function(event) {
+  if($('.email').val().match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+    $('.email').prop("disabled", true);
+    $('.email').removeClass('error');
+    $('.button').addClass('subscribed');
+    $('.email').val($('.email').val());
+    return true;
+  }
+  $('.email').addClass('error');
+  return false;
 });

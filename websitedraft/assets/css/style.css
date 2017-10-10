@@ -1,0 +1,213 @@
+html, body {
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #F4F4F4;
+  font-size: 1.1em; }
+  body a {
+    color: inherit;
+    text-decoration: none; }
+    body a:hover {
+      color: inherit;
+      text-decoration: none; }
+
+#header {
+  display: flex;
+  width: 70%;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto; }
+  #header .logo {
+    flex: 40%;
+    width: 40%;
+    text-align: center; }
+    #header .logo .date {
+      text-align: center;
+      font-size: 2.4em;
+      color: #B53C76; }
+  #header .content {
+    flex: 50%;
+    width: 50%; }
+    #header .content .images img {
+      width: 100%;
+      box-shadow: 0px 0px 20px grey; }
+    #header .content .more {
+      text-align: center; }
+
+#mission {
+  overflow: hidden; }
+  #mission .content {
+    font-size: 1.3em; }
+  #mission .images {
+    width: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; }
+    #mission .images img {
+      display: block;
+      width: 25%;
+      height: auto; }
+
+#info {
+  padding: 30px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex; }
+  #info .quote {
+    width: 50%;
+    flex: 50%;
+    font-size: 1.4em;
+    display: inline-block; }
+    #info .quote .author {
+      color: #008BEE;
+      font-size: 0.95em; }
+  #info .stats {
+    width: 50%;
+    flex: 50%; }
+    #info .stats .stat .value {
+      color: #D0709E;
+      font-size: 3em;
+      padding-right: 10px; }
+    #info .stats .stat .text {
+      vertical-align: super;
+      font-size: 1.5em; }
+
+#faq {
+  background-color: #C69DD2;
+  padding-bottom: 30px; }
+  #faq .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between; }
+    #faq .flex-container .flex-box {
+      flex: 45%;
+      width: 45%;
+      background-color: #F4F4F4;
+      margin: 10px;
+      padding: 15px;
+      box-shadow: 0 0 15px grey;
+      border-radius: 2px; }
+      #faq .flex-container .flex-box .icons {
+        text-align: center; }
+      #faq .flex-container .flex-box .subtitle {
+        text-align: center;
+        font-size: 1.4em; }
+
+#team .content {
+  width: 80%;
+  margin: 0 auto; }
+  #team .content .teampic {
+    display: flex;
+    flex-wrap: wrap; }
+    #team .content .teampic .member {
+      flex: 33%;
+      width: 33%;
+      text-align: center;
+      margin-bottom: 20px; }
+      #team .content .teampic .member .name {
+        font-size: 1.2em; }
+      #team .content .teampic .member .crop {
+        width: 25vw;
+        max-width: 300px;
+        height: 25vw;
+        max-height: 300px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 10px; }
+      #team .content .teampic .member .crop img {
+        width: 100%;
+        margin-top: 10%;
+        min-width: 24vw;
+        min-height: 24vw; }
+
+#sponsors .row {
+  text-align: center; }
+#sponsors .row a:hover {
+  text-decoration: none; }
+#sponsors .row .sponsor img {
+  padding: 2vw;
+  vertical-align: middle; }
+#sponsors .row.host .sponsor img {
+  max-width: 50%;
+  height: auto; }
+#sponsors .row.gold .sponsor img {
+  max-width: 24%;
+  height: auto; }
+#sponsors .row.gold .sponsor.vertical img {
+  max-height: 230px;
+  height: auto; }
+@media (max-width: 600px) {
+  #sponsors .row.gold .sponsor.vertical img {
+    max-height: none;
+    width: 35% !important; } }
+#sponsors .row.silver .sponsor, #sponsors .row.bronze .sponsor {
+  max-width: 25%; }
+#sponsors .row.partner .sponsor img {
+  width: 33%;
+  height: auto; }
+#sponsors .row.partner .sponsor.ms img {
+  max-width: 20%;
+  height: auto; }
+@media (max-width: 600px) {
+  #sponsors .row.partner .sponsor.ms img {
+    max-height: none;
+    width: 45% !important; } }
+@media (max-width: 600px) {
+  #sponsors .row .sponsor img {
+    max-width: 75% !important;
+    width: 75% !important;
+    height: auto !important;
+    padding-bottom: 6vw; } }
+
+#socialmedia .content .subscribe {
+  text-align: center;
+  margin-bottom: 20px; }
+  #socialmedia .content .subscribe .email {
+    outline: none;
+    border: 0px;
+    padding: 7px;
+    font-size: 1.1em;
+    width: 275px;
+    transition: all 0.40s;
+    margin-bottom: 8px; }
+    #socialmedia .content .subscribe .email.error {
+      border: 1px solid red; }
+  #socialmedia .content .subscribe .button {
+    outline: none;
+    border: 0px;
+    background-color: white;
+    padding: 10px;
+    font-size: 1em;
+    display: inline-block;
+    transition: all 0.40s;
+    font-family: 'Roboto Condensed', sans-serif; }
+    #socialmedia .content .subscribe .button span {
+      width: 5.8em;
+      display: block;
+      overflow: hidden;
+      transition: all 0.6s; }
+    #socialmedia .content .subscribe .button:hover {
+      background-color: black;
+      color: white; }
+    #socialmedia .content .subscribe .button.subscribed {
+      background-color: black;
+      color: white; }
+      #socialmedia .content .subscribe .button.subscribed span {
+        width: 6.5em; }
+
+/*# sourceMappingURL=style.css.map */
