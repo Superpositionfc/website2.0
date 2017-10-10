@@ -77,9 +77,15 @@ body {
   margin: 0 auto;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   position: relative;
-  margin-bottom: 10vh;
+  margin-bottom: 8vh;
   background-color: #D194D2; }
+  #info .title {
+    flex: 100%;
+    width: 100%;
+    font-size: 2.5em;
+    margin-bottom: 40px; }
   #info .content {
     display: flex; }
     #info .content .quote {
@@ -100,6 +106,12 @@ body {
       #info .content .stats .stat .text {
         vertical-align: super;
         font-size: 1.5em; }
+    @media (max-width: 700px) {
+      #info .content {
+        display: block; }
+        #info .content > div {
+          flex: 90% !important;
+          width: 90% !important; } }
   #info .arrow {
     position: absolute;
     bottom: -10vh;
@@ -154,8 +166,8 @@ body {
     display: flex;
     flex-wrap: wrap; }
     #team .content .teampic .member {
-      flex: 33%;
-      width: 33%;
+      flex: 27%;
+      width: 27%;
       text-align: center;
       margin-bottom: 20px; }
       #team .content .teampic .member .name {
@@ -237,13 +249,12 @@ body {
     padding: 10px;
     font-size: 1em;
     display: inline-block;
-    transition: all 0.40s;
-    font-family: 'Roboto Condensed', sans-serif; }
+    transition: all 0.40s; }
     #socialmedia .content .subscribe .button span {
-      width: 5.8em;
+      width: 5.62em;
       display: block;
       overflow: hidden;
-      transition: all 0.6s; }
+      transition: all 0.4s; }
     #socialmedia .content .subscribe .button:hover {
       background-color: black;
       color: white; }
@@ -251,6 +262,6 @@ body {
       background-color: black;
       color: white; }
       #socialmedia .content .subscribe .button.subscribed span {
-        width: 6.5em; }
+        width: 6.3em; }
 
 /*# sourceMappingURL=style.css.map */
