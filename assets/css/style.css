@@ -166,16 +166,16 @@ body {
     display: flex;
     flex-wrap: wrap; }
     #team .content .teampic .member {
-      flex: 27%;
-      width: 27%;
+      flex: 21%;
+      width: 21%;
       text-align: center;
       margin-bottom: 20px; }
       #team .content .teampic .member .name {
         font-size: 1.2em; }
       #team .content .teampic .member .crop {
-        width: 25vw;
+        width: 18vw;
         max-width: 300px;
-        height: 25vw;
+        height: 18vw;
         max-height: 300px;
         overflow: hidden;
         display: flex;
@@ -187,8 +187,18 @@ body {
       #team .content .teampic .member .crop img {
         width: 100%;
         margin-top: 10%;
-        min-width: 24vw;
-        min-height: 24vw; }
+        min-width: 18vw;
+        min-height: 18vw; }
+    @media (max-width: 800px) {
+      #team .content .teampic .member {
+        flex: 27%;
+        width: 27%; }
+        #team .content .teampic .member .crop {
+          width: 25vw;
+          height: 25vw; }
+        #team .content .teampic .member .crop img {
+          min-width: 21vw;
+          min-height: 21vw; } }
 
 #sponsors .row {
   text-align: center; }
