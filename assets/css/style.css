@@ -205,10 +205,10 @@ body {
 #sponsors .row a:hover {
   text-decoration: none; }
 #sponsors .row .sponsor img {
-  padding: 2vw;
+  padding: 1vw;
   vertical-align: middle; }
 #sponsors .row.host .sponsor img {
-  max-width: 50%;
+  max-width: 30%;
   height: auto; }
 #sponsors .row.gold .sponsor img {
   max-width: 24%;
