@@ -274,4 +274,65 @@ body {
       #socialmedia .content .subscribe .button.subscribed span {
         width: 6.3em; }
 
+        #signup  {
+          text-align: center; }
+
+        .regbutton {
+          width: 100px;
+          margin: 20px;
+          margin-top: 35px;
+          background-color: rgba(255,255,255,0.8);
+          border: 1px solid #951856;
+          border-radius: 2px;
+          padding: 20px;
+          font-size: 1.8em;
+          text-align: center;
+          transition: all 0.25s;
+        }
+
+        .regbutton.parent {
+          width: 400px;
+          font-size: 1.5em;
+        }
+
+        .under .regbutton {
+          flex: 100px;
+          margin: 5px;
+          margin-top: 15px;
+          background-color: rgba(255,255,255,0.8);
+          border: 1px solid #951856;
+          border-radius: 5px;
+          padding: 10px;
+          font-size: 1.3em;
+          transition: all 0.25s;
+        }
+        @media(max-width: 700px) {
+          .under {
+            flex-wrap: wrap;
+          }
+          .under .regbutton {
+            flex: 150px;
+            margin: 5px;
+            margin-top: 15px;
+            background-color: rgba(255,255,255,0.8);
+            border: 1px solid #951856;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 1.3em;
+            transition: all 0.25s;
+          }
+        }
+
+        #signup .regbutton {
+          margin-bottom: 15px;
+          text-transform: uppercase;
+        }
+
+        .regbutton:hover {
+          background-color: rgba(0,0,0,0.8);
+          color: white;
+          border-radius: 2px;
+        }
+
+
 /*# sourceMappingURL=style.css.map */
