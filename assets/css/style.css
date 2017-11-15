@@ -106,18 +106,18 @@ section {
     z-index: 10;
     background-color: transparent; }
     #header .arrow path {
-      fill: #D194D2; }
+      fill: #B53C76; }
 
 #signup {
   text-align: center;
   margin-bottom: 15px; }
-  #signup .regbutton {
+    #signup .regbutton {
     width: 275px;
     margin: 0 auto;
-    margin: 7px;
+    margin: 15px;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #951856;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 10px;
     font-size: 1.8em;
     text-align: center;
@@ -138,7 +138,7 @@ section {
   flex-wrap: wrap;
   position: relative;
   margin-bottom: 8vh;
-  background-color: #D194D2; }
+  background-color: #B53C76; }
   #info .title {
     flex: 100%;
     width: 100%;
@@ -150,20 +150,22 @@ section {
       width: 50%;
       flex: 50%;
       font-size: 1.4em;
-      display: inline-block; }
+      display: inline-block;
+      color: white; }
       #info .content .quote .author {
-        color: #008BEE;
+        color: darkgray;
         font-size: 0.95em; }
     #info .content .stats {
       width: 50%;
       flex: 50%; }
       #info .content .stats .stat .value {
-        color: #4C2887;
+        color: darkgray;
         font-size: 3em;
         padding-right: 10px; }
       #info .content .stats .stat .text {
         vertical-align: super;
-        font-size: 1.5em; }
+        font-size: 1.5em;
+        color: white; }
     @media (max-width: 700px) {
       #info .content {
         display: block; }
@@ -178,7 +180,7 @@ section {
     height: 10vh;
     background-color: #F4F4F4; }
     #info .arrow path {
-      fill: #D194D2; }
+      fill: #B53C76; }
 
 #mission {
   overflow: hidden; }
@@ -196,13 +198,21 @@ section {
       height: auto; }
 
 #faq {
-  background-color: #C69DD2;
+  background-color: #B53C76;
   padding-bottom: 30px; }
   #faq .flex-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between; }
+    #faq .title {
+    letter-spacing: 0.1em;
+    line-height: 1.75em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px;
+    font-size: 34pt;
+    color: black; }
     #faq .flex-container .flex-box {
       flex: 45%;
       width: 45%;
@@ -263,10 +273,10 @@ section {
 #sponsors .row a:hover {
   text-decoration: none; }
 #sponsors .row .sponsor img {
-  padding: 2vw;
+  padding: 1.5vw;
   vertical-align: middle; }
 #sponsors .row.host .sponsor img {
-  max-width: 50%;
+  max-width: 40%;
   height: auto; }
 #sponsors .row.gold .sponsor img {
   max-width: 24%;
