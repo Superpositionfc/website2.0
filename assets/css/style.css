@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic");
 html, body {
   width: 100%;
   min-height: 100%;
@@ -18,8 +19,46 @@ body {
       color: inherit;
       text-decoration: none; }
 
-#myTopnav {
+section {
+  width: 100%; }
+  section .content {
+    width: 70%;
+    margin: 0 auto; }
+    section .content .sam {
+      letter-spacing: 0.1em;
+      line-height: 1.75em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 15px;
+      font-size: 34pt;
+      color: #951856; }
+  @media (max-width: 700px) {
+    section section .content {
+      width: 95%; }
+      section section .content .sam {
+        font-size: 20pt; } }
+
+.topnav {
+  background-color: rgba(244, 244, 244, 0.9);
+  color: black;
+  width: 100%;
+  display: inline-flex;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
   z-index: 100; }
+  .topnav a {
+    margin: 20px;
+    min-width: 120px; }
+  @media (max-width: 900px) {
+    .topnav {
+      flex-wrap: wrap; }
+      .topnav a {
+        margin: 10px;
+        min-width: 80px; } }
 
 #header {
   display: flex;
@@ -71,6 +110,25 @@ body {
     background-color: transparent; }
     #header .arrow path {
       fill: #D194D2; }
+
+#signup {
+  text-align: center;
+  margin-bottom: 15px; }
+  #signup .regbutton {
+    width: 275px;
+    margin: 0 auto;
+    margin: 7px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #951856;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.8em;
+    text-align: center;
+    transition: all 0.25s; }
+    #signup .regbutton:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      border-radius: 2px; }
 
 #info {
   padding: 30px;
@@ -205,10 +263,10 @@ body {
 #sponsors .row a:hover {
   text-decoration: none; }
 #sponsors .row .sponsor img {
-  padding: 1vw;
+  padding: 2vw;
   vertical-align: middle; }
 #sponsors .row.host .sponsor img {
-  max-width: 30%;
+  max-width: 50%;
   height: auto; }
 #sponsors .row.gold .sponsor img {
   max-width: 24%;
@@ -261,7 +319,7 @@ body {
     display: inline-block;
     transition: all 0.40s; }
     #socialmedia .content .subscribe .button span {
-      width: 5.62em;
+      width: 5.61em;
       display: block;
       overflow: hidden;
       transition: all 0.4s; }
@@ -273,66 +331,5 @@ body {
       color: white; }
       #socialmedia .content .subscribe .button.subscribed span {
         width: 6.3em; }
-
-        #signup  {
-          text-align: center; }
-
-        .regbutton {
-          width: 100px;
-          margin: 20px;
-          margin-top: 35px;
-          background-color: rgba(255,255,255,0.8);
-          border: 1px solid #951856;
-          border-radius: 2px;
-          padding: 20px;
-          font-size: 1.8em;
-          text-align: center;
-          transition: all 0.25s;
-        }
-
-        .regbutton.parent {
-          width: 400px;
-          font-size: 1.5em;
-        }
-
-        .under .regbutton {
-          flex: 100px;
-          margin: 5px;
-          margin-top: 15px;
-          background-color: rgba(255,255,255,0.8);
-          border: 1px solid #951856;
-          border-radius: 5px;
-          padding: 10px;
-          font-size: 1.3em;
-          transition: all 0.25s;
-        }
-        @media(max-width: 700px) {
-          .under {
-            flex-wrap: wrap;
-          }
-          .under .regbutton {
-            flex: 150px;
-            margin: 5px;
-            margin-top: 15px;
-            background-color: rgba(255,255,255,0.8);
-            border: 1px solid #951856;
-            border-radius: 5px;
-            padding: 10px;
-            font-size: 1.3em;
-            transition: all 0.25s;
-          }
-        }
-
-        #signup .regbutton {
-          margin-bottom: 15px;
-          text-transform: uppercase;
-        }
-
-        .regbutton:hover {
-          background-color: rgba(0,0,0,0.8);
-          color: white;
-          border-radius: 2px;
-        }
-
 
 /*# sourceMappingURL=style.css.map */
