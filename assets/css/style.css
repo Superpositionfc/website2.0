@@ -33,9 +33,9 @@ section {
       font-size: 34pt;
       color: #951856; }
   @media (max-width: 700px) {
-    section section .content {
+    section .content {
       width: 95%; }
-      section section .content .sam {
+      section .content .sam {
         font-size: 20pt; } }
 
 .topnav {
@@ -49,16 +49,18 @@ section {
   left: 0;
   align-items: center;
   justify-content: center;
-  z-index: 100; }
+  z-index: 100;
+  box-shadow: 0 0px 5px 2px #C0C0C0; }
   .topnav a {
     margin: 20px;
     min-width: 120px; }
   @media (max-width: 900px) {
     .topnav {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      padding-top: 3px; }
       .topnav a {
-        margin: 10px;
-        min-width: 80px; } }
+        margin: 3px 0px 6px 0px;
+        min-width: 33%; } }
 
 #header {
   display: flex;
@@ -75,14 +77,9 @@ section {
       text-align: center;
       font-size: 2.4em;
       color: #B53C76; }
-  #header .content {
-    flex: 50%;
-    width: 50%; }
-    #header .content .images img {
-      width: 100%;
-      box-shadow: 0px 0px 20px grey; }
-    #header .content .more {
-      text-align: center; }
+    @media (max-width: 700px) {
+      #header .logo img {
+        width: 70%; } }
   #header #particles-js {
     position: absolute;
     top: 0;
@@ -125,6 +122,9 @@ section {
     font-size: 1.8em;
     text-align: center;
     transition: all 0.25s; }
+    @media (max-width: 800px) {
+      #signup .regbutton {
+        display: inline-block; } }
     #signup .regbutton:hover {
       background-color: rgba(0, 0, 0, 0.8);
       color: white;
