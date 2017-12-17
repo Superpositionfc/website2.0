@@ -72,8 +72,9 @@ section {
     flex-wrap: wrap;
     padding-top: 3px;
     a {
-      margin: 3px 0px 6px 0px;
-      min-width: 33%;
+      margin: 7px 0px 10px 0px;
+      min-width: 25%;
+      font-size: 1.1em;
     }
   }
 }
@@ -85,18 +86,65 @@ section {
   align-items: center;
   margin: 0 auto;
   position: relative;
-  .logo {
-    flex: 40%;
-    width: 40%;
-    text-align: center;
-    .date {
-      text-align: center;
-      font-size: 2.4em;
-      color: #B53C76;
-    }
+  .content {
+    margin: 0 auto;
+    display: flex;
+    z-index: 5;
+    position: relative;
     @media(max-width: 700px) {
-      img {
-        width: 70%;
+      width: 95%;
+      flex-wrap: wrap;
+      .logo {
+        flex: 100%;
+      }
+      .text {
+        display: none;
+      }
+    }
+    .logo {
+      flex: 50%;
+      width: 50%;
+      text-align: center;
+      min-width: 355px;
+      .date {
+        text-align: center;
+        font-size: 2.4em;
+        color: #B53C76;
+      }
+      @media(max-width: 700px) {
+        img {
+          width: 70%;
+        }
+      }
+    }
+    .text {
+      flex: 50%;
+      text-align: center;
+      .signup {
+        font-size: 1.7em;
+      }
+      .regbutton {
+        display: inline-block;
+        width: 240px;
+        margin: 0 auto;
+        margin: 15px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid #951856;
+        border-radius: 2px;
+        padding: 10px;
+        font-size: 1.5em;
+        text-align: center;
+        transition: all 0.25s;
+        @media (max-width: 800px) {
+          display: inline-block;
+          width: 200px;
+          font-size: 1.7em;
+        }
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+          color: white;
+          border-radius: 2px;
+        }
       }
     }
   }
@@ -128,7 +176,7 @@ section {
     z-index: 10;
     background-color: transparent;
     path {
-      fill: #D194D2;
+      fill: #B53C76;
     }
   }
 }
@@ -139,10 +187,10 @@ section {
   .regbutton {
     width: 275px;
     margin: 0 auto;
-    margin: 7px;
+    margin: 15px;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #951856;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 10px;
     font-size: 1.8em;
     text-align: center;
@@ -166,12 +214,14 @@ section {
   flex-wrap: wrap;
   position: relative;
   margin-bottom: 8vh;
-  background-color: #D194D2;
+  background-color: #B53C76;
   .title {
     flex: 100%;
     width: 100%;
     font-size: 2.5em;
     margin-bottom: 40px;
+    color: #FAFAFA;
+    text-transform: uppercase;
   }
   .content {
     display: flex;
@@ -180,8 +230,9 @@ section {
       flex: 50%;
       font-size: 1.4em;
       display: inline-block;
+      color: #E0E0E0;
       .author {
-        color: #008BEE;
+        color: darkgray;
         font-size: 0.95em;
       }
     }
@@ -190,13 +241,14 @@ section {
       flex: 50%;
       .stat {
         .value {
-          color: #4C2887;
+          color: darkgray;
           font-size: 3em;
           padding-right: 10px;
         }
         .text {
           vertical-align: super;
           font-size: 1.5em;
+          color: #E0E0E0;
         }
       }
     }
@@ -216,7 +268,7 @@ section {
     height: 10vh;
     background-color: #F4F4F4;
     path {
-      fill: #D194D2;
+      fill: #B53C76;
     }
   }
 }
@@ -241,13 +293,31 @@ section {
 }
 
 #faq {
-  background-color: #C69DD2;
+  background-color: #B53C76;
   padding-bottom: 30px;
+  .title {
+    letter-spacing: 0.1em;
+    line-height: 1.75em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px;
+    font-size: 34pt;
+    color: white;
+  }
   .flex-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    .title {
+      letter-spacing: 0.1em;
+      line-height: 1.75em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 15px;
+      font-size: 34pt;
+      color: white;
+    }
     .flex-box {
       flex: 45%;
       width: 45%;
@@ -268,6 +338,20 @@ section {
 }
 
 #team {
+  background-color: #B53C76;
+  padding-bottom: 30px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  .title {
+    flex: 100%;
+    width: 100%;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #FAFAFA;
+    text-transform: uppercase;
+  }
   .content {
     width: 80%;
     margin: 0 auto;
@@ -330,12 +414,12 @@ section {
   }
 
   .row .sponsor img {
-  	padding: 2vw;
+  	padding: 1.5vw;
   	vertical-align: middle;
   }
 
   .row.host .sponsor img {
-  	max-width: 50%;
+  	max-width: 30%;
   	height: auto;
   }
 

@@ -59,8 +59,9 @@ section {
       flex-wrap: wrap;
       padding-top: 3px; }
       .topnav a {
-        margin: 3px 0px 6px 0px;
-        min-width: 33%; } }
+        margin: 7px 0px 10px 0px;
+        min-width: 25%;
+        font-size: 1.1em; } }
 
 #header {
   display: flex;
@@ -69,17 +70,57 @@ section {
   align-items: center;
   margin: 0 auto;
   position: relative; }
-  #header .logo {
-    flex: 40%;
-    width: 40%;
-    text-align: center; }
-    #header .logo .date {
-      text-align: center;
-      font-size: 2.4em;
-      color: #B53C76; }
+  #header .content {
+    margin: 0 auto;
+    display: flex;
+    z-index: 5;
+    position: relative; }
     @media (max-width: 700px) {
-      #header .logo img {
-        width: 70%; } }
+      #header .content {
+        width: 95%;
+        flex-wrap: wrap; }
+        #header .content .logo {
+          flex: 100%; }
+        #header .content .text {
+          display: none; } }
+    #header .content .logo {
+      flex: 50%;
+      width: 50%;
+      text-align: center;
+      min-width: 355px; }
+      #header .content .logo .date {
+        text-align: center;
+        font-size: 2.4em;
+        color: #B53C76; }
+      @media (max-width: 700px) {
+        #header .content .logo img {
+          width: 70%; } }
+    #header .content .text {
+      flex: 50%;
+      text-align: center; }
+      #header .content .text .signup {
+        font-size: 1.7em; }
+      #header .content .text .regbutton {
+        display: inline-block;
+        width: 240px;
+        margin: 0 auto;
+        margin: 15px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid #951856;
+        border-radius: 2px;
+        padding: 10px;
+        font-size: 1.5em;
+        text-align: center;
+        transition: all 0.25s; }
+        @media (max-width: 800px) {
+          #header .content .text .regbutton {
+            display: inline-block;
+            width: 200px;
+            font-size: 1.7em; } }
+        #header .content .text .regbutton:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+          color: white;
+          border-radius: 2px; }
   #header #particles-js {
     position: absolute;
     top: 0;
@@ -111,7 +152,7 @@ section {
 #signup {
   text-align: center;
   margin-bottom: 15px; }
-    #signup .regbutton {
+  #signup .regbutton {
     width: 275px;
     margin: 0 auto;
     margin: 15px;
@@ -145,7 +186,7 @@ section {
     font-size: 2.5em;
     margin-bottom: 40px;
     color: #FAFAFA;
-    text-transform: uppercase;}
+    text-transform: uppercase; }
   #info .content {
     display: flex; }
     #info .content .quote {
@@ -202,12 +243,7 @@ section {
 #faq {
   background-color: #B53C76;
   padding-bottom: 30px; }
-  #faq .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between; }
-    #faq .title {
+  #faq .title {
     letter-spacing: 0.1em;
     line-height: 1.75em;
     text-transform: uppercase;
@@ -215,6 +251,19 @@ section {
     padding: 15px;
     font-size: 34pt;
     color: white; }
+  #faq .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between; }
+    #faq .flex-container .title {
+      letter-spacing: 0.1em;
+      line-height: 1.75em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 15px;
+      font-size: 34pt;
+      color: white; }
     #faq .flex-container .flex-box {
       flex: 45%;
       width: 45%;
@@ -242,49 +291,47 @@ section {
     font-size: 2.5em;
     margin-bottom: 40px;
     color: #FAFAFA;
-    text-transform: uppercase;
-    }
-    #team .content {
-      width: 80%;
-      margin: 0 auto;}
+    text-transform: uppercase; }
+  #team .content {
+    width: 80%;
+    margin: 0 auto; }
     #team .content .teampic {
       display: flex;
-      flex-wrap: wrap;
-      color: #E0E0E0;}
-    #team .content .teampic .member {
-      flex: 21%;
-      width: 21%;
-      text-align: center;
-      margin-bottom: 20px; }
-      #team .content .teampic .member .name {
-        font-size: 1.2em; }
-      #team .content .teampic .member .crop {
-        width: 18vw;
-        max-width: 300px;
-        height: 18vw;
-        max-height: 300px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        margin: 0 auto;
-        margin-bottom: 10px; }
-      #team .content .teampic .member .crop img {
-        width: 100%;
-        margin-top: 10%;
-        min-width: 18vw;
-        min-height: 18vw; }
-    @media (max-width: 800px) {
+      flex-wrap: wrap; }
       #team .content .teampic .member {
-        flex: 27%;
-        width: 27%; }
+        flex: 21%;
+        width: 21%;
+        text-align: center;
+        margin-bottom: 20px; }
+        #team .content .teampic .member .name {
+          font-size: 1.2em; }
         #team .content .teampic .member .crop {
-          width: 25vw;
-          height: 25vw; }
+          width: 18vw;
+          max-width: 300px;
+          height: 18vw;
+          max-height: 300px;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          margin: 0 auto;
+          margin-bottom: 10px; }
         #team .content .teampic .member .crop img {
-          min-width: 21vw;
-          min-height: 21vw; } }
+          width: 100%;
+          margin-top: 10%;
+          min-width: 18vw;
+          min-height: 18vw; }
+      @media (max-width: 800px) {
+        #team .content .teampic .member {
+          flex: 27%;
+          width: 27%; }
+          #team .content .teampic .member .crop {
+            width: 25vw;
+            height: 25vw; }
+          #team .content .teampic .member .crop img {
+            min-width: 21vw;
+            min-height: 21vw; } }
 
 #sponsors .row {
   text-align: center; }
