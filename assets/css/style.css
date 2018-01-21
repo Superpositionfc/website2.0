@@ -22,7 +22,7 @@ body {
 section {
   width: 100%; }
   section .content {
-    width: 80%;
+    width: 70%;
     margin: 0 auto; }
     section .content .sam {
       letter-spacing: 0.1em;
@@ -87,10 +87,10 @@ section {
       flex: 50%;
       width: 50%;
       text-align: center;
-      min-width: 655px; }
+      min-width: 355px; }
       #header .content .logo .date {
         text-align: center;
-        font-size: 2em;
+        font-size: 1.7em;
         color: #B53C76; }
       @media (max-width: 700px) {
         #header .content .logo img {
@@ -183,7 +183,7 @@ section {
   #info .title {
     flex: 100%;
     width: 100%;
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 40px;
     color: #FAFAFA;
     text-transform: uppercase; }
