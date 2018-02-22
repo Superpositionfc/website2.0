@@ -445,7 +445,7 @@ td, th {
 #sponsors .row a:hover {
   text-decoration: none; }
 #sponsors .row .sponsor img {
-  padding: 1.5vw;
+  padding: 2vw;
   vertical-align: middle; }
 #sponsors .row.host .sponsor img {
   max-width: 24%;
